@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Heavy Machinery</h3>
+            <h3 className="text-xl font-bold mb-4">Global Mach Innovations</h3>
             <p className="text-gray-400">
               Your trusted partner in heavy machinery solutions since 1990.
             </p>
@@ -34,24 +34,25 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
-          <div>
+            <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
-                <Phone size={18} className="mr-2" />
-                +1 (555) 123-4567
+              <Phone size={18} className="mr-2" />
+              +1 (555) 123-4567 <span className="text-yellow-500">(Line currently down)</span>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-2" />
-                info@heavymachinery.com
+              <Mail size={18} className="mr-2" />
+              <a href="mailto:salesmachineinnovations@gmail.com" className="text-gray-400 hover:text-white">
+              salesmachineinnovations@gmail.com
+              </a>
               </li>
               <li className="flex items-center">
-                <MapPin size={18} className="mr-2" />
-                123 Industry Ave, NY 10001
+              <MapPin size={18} className="mr-2" />
+              123 Industry Ave, NY 10001
               </li>
             </ul>
-          </div>
+            </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Business Hours</h4>
@@ -64,7 +65,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Heavy Machinery. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} GlobalMachInnovations. All rights reserved.</p>
         </div>
       </div>
     </footer>

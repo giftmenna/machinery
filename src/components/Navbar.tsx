@@ -29,6 +29,12 @@ export default function Navbar() {
               <Link to="/contact" className="hover:bg-gray-700 px-3 py-2 rounded-md">
                 Contact
               </Link>
+              <Link to="/tracking" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+                Tracking
+              </Link>
+              <Link to="/admin" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+                Admin
+              </Link>
               <Link to="/cart" className="hover:bg-gray-700 px-3 py-2 rounded-md">
                 <ShoppingCart className="inline-block" />
               </Link>
@@ -76,6 +82,20 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Contact
+            </Link>
+            <Link
+              to="/tracking"
+              className="block px-3 py-2 rounded-md hover:bg-gray-700"
+              onClick={() => setIsOpen(false)}
+            >
+              Tracking
+            </Link>
+            <Link
+              to="/admin"
+              className="block px-3 py-2 rounded-md hover:bg-gray-700"
+              onClick={() => setIsOpen(false)}
+            >
+              Admin
             </Link>
             <Link
               to="/cart"

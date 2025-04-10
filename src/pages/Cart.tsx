@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { CartItem } from "../index"; // Importing CartItem interface
+import { CartItem } from "../types"; // Adjusted to import CartItem from the correct file
 import toast from "react-hot-toast"; // For notifications
 
 interface CartProps {

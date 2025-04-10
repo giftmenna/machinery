@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 import { Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Product, CartItem } from "../index";
+import { Product, CartItem } from "../types"; // Adjust the path to the correct file containing these types
 
 interface ProductsProps {
   cart: CartItem[];
@@ -21,7 +21,7 @@ const Products: React.FC<ProductsProps> = ({ cart, setCart }) => {
         const { data, error } = await supabase
           .from("products")
           .select("*")
-          .limit(40);
+          .limit(50);
 
         if (error) {
           throw new Error(error.message);
@@ -142,7 +142,7 @@ const Products: React.FC<ProductsProps> = ({ cart, setCart }) => {
               <img
                 src={product.image_url}
                 alt={product.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-80 object-cover"
               />
             </Link>
             <div className="p-6">

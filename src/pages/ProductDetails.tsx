@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "../lib/supabase";
-import { Product } from "../index";
+import { Product } from "../types"; // Update the path to the correct file where Product is defined
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
